@@ -2,16 +2,19 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Title titolo="sono un H1"/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Title from './components/Title.vue'
 
-export default {
+export default { //questo export corrisponde a import in main.js riga 2
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Title
   }
 }
 </script>
