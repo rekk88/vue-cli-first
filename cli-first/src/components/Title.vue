@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ titolo }}</h1>
+    <h2>{{titolo2}}</h2>
   </div>
 </template>
 
@@ -8,8 +9,16 @@
 export default {
   name: 'Title',
   props: {
-    titolo: String
-  }
+    titolo: String, //nota per me : se metto int e in App.vue metto una stringa il compilatore si incazza di brutto
+    titolo2: String
+  },
+  methods: {
+    
+  },
+  mounted() {
+    console.log("un console log vale piu di mille parole")
+    // alert("leggi la console")
+  },
 }
 </script>
 
